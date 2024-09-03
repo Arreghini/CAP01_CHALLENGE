@@ -24,6 +24,7 @@ fake_db = {"users": {}}
 #  Función para autenticación y validación de acceso por token. Aquí se utiliza el diccionario con los datos del usuario
 #  para generar el token. Luego de define el tiempo de expiración del token como los minutos definidos de expiración, sumándolos a
 #  la hora actual. Luego crea un token a partir de jwt.encode a partir de la clave secreta y algorítmo definidos 
+
 def create_access_token(data: dict):
     to_encode = data.copy()
     expire = datetime.now(timezone.utc) + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
