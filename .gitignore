@@ -1,2 +1,10 @@
-.pytest_cache
+# Ignorar caché de pytest
+.pytest_cache/
+
+# Ignorar Pipenv
 Pipfile
+Pipfile.lock
+
+# Ignorar directorios de entorno virtual
+venv/
+env/
